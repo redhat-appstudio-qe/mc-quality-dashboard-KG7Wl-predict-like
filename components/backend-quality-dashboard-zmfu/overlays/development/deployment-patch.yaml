@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-zmfu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-udjn-tenant/mc-quality-dashboard/backend-quality-dashboard-zmfu@sha256:dc6c74f3ba81266662dc98d20e96fd0a322d1d490d688138ab089a75cec78722
+        name: container-image
+        resources: {}
+status: {}
